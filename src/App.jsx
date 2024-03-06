@@ -22,18 +22,18 @@ import './App.css'
           </div>
           {activeMenu ? (
             <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white">
-              Sidebar
+              <Sidebar/>
             </div>
           ):(
             <div className="w-0 dark:bg-secondary-dark-bg">
-              Sidebar 0
+              <Sidebar/>
             </div>
           )}
           <div className={
             activeMenu ? "dark:bg-main-bg bg-main-bg min-h-screen md:ml-72 w-full":"dark:bg-main-bg bg-main-bg min-h-screen flex-2 w-full"
           }>
               <div className="fixed md:static bg-main-bg dark navbar w-full"> 
-                  Navbar
+                  <Navbar/>
               </div>
           </div>
           <div>
